@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div>
+      <input id="a" type="text">
+      <input id="b" type="text">
+      <input type="button" onclick="add()" value="add"/>
+      <input type="button" onclick="multiply()" value="multiply"/>
+      <input type="button" onclick="divide()" value="divide"/>
+      <input type="button" onclick="subtract()" value="subtract"/>
+    </div>
+    <script>
+
+      let a, b, c;
+      let value = () => {
+        a = Number(document.getElementById("a").value);
+        b = Number(document.getElementById("b").value);
+      }
+
+      let add = () => {
+        value();
+        c = a+b;
+        alert("The sum is " + c);
+      }
+
+      let multiply = () => {
+        value();
+        c = a*b;
+        alert("The product is " + c);
+      }
+
+      let divide = () => {
+        value();
+        c = a/b;
+        alert("The quotient is " + c);
+      }
+
+      let subtract = () => {
+        value();
+        c = a-b;
+        alert("The difference is " + c);
+      }
+
+    </script>
+
+  </body>
+</html>
